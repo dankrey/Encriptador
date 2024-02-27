@@ -278,10 +278,15 @@
     transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
-    padding: 10px 20px;
+    width: 50%; /* Ancho del 80% del ancho de la pantalla */
+    max-width: 220px; /* Máximo ancho de 400px para evitar que la notificación se vuelva demasiado ancha en pantallas grandes */
     border-radius: 5px;
+    height: auto; /* Altura ajustada automáticamente según el contenido */
     transition: opacity 0.5s ease-in-out; /* Agregar transición de opacidad */
     opacity: 0; /* Inicialmente ocultar la notificación */
+    text-align: center;
+    padding: 5px 5px 5px  ;
+    
 }
 
 .notificacion.show {
